@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Tasks</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="card">
+      <header class="card__header">
+        <h1>My Tasks</h1>
+        <div class="input-group">
+          <input id="task-input" type="text" placeholder="Add a new task" aria-label="Task description" />
+          <button id="add-btn" aria-label="Add task">Add</button>
+        </div>
+        <div class="filters" role="group" aria-label="Filter tasks">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="active">Active</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+      </header>
+      <ul id="task-list" class="task-list" aria-live="polite"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
